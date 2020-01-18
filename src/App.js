@@ -1,15 +1,23 @@
-import React from 'react';
-import logo from './img/cube.png';
-import Helmet from 'react-helmet';
 import './App.css';
+
+import Helmet from 'react-helmet';
+import React from 'react';
+
+import Header from './components/header/header';
+import Technologies from './components/technologies/technologies';
+import logo from './img/cube.png';
+
 
 const App = () => {
   return (
     <div className="App">
-    <Helmet>
-      <title>ABC</title>
-      <link rel="icon" href={logo} />
-    </Helmet>
+      <Helmet>
+        <title>ABC</title>
+        <link rel="icon" href={logo} />
+      </Helmet>
+
+      <Header />
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>
@@ -24,8 +32,11 @@ const App = () => {
           Learn React
         </a>
       </header>
+
+      <Technologies />
+
     </div>
-  );
+  )
 }
 
 export default App;
