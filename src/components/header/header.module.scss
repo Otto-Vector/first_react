@@ -1,0 +1,10 @@
+.header {
+  grid-area: header;
+  background: green;
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+  width: 80%;
+  }
+}

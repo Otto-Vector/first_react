@@ -1,0 +1,16 @@
+
+.sidebar {
+  grid-area: nav;
+  background: red;
+  height: calc(100vh - 21vh);
+
+  .item {
+    color: #707;
+    font-weight: bold;
+
+    &.active {
+      color: #11608f;
+      font-weight: normal;
+    }
+  }
+}

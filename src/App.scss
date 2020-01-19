@@ -1,4 +1,15 @@
+//////reset///////////////////////////
+input, button, select {
+  outline: 0;
+  border: none;
+}
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/////////////////////////////////////////
 .App {
 
   max-width: 1000px;
@@ -14,25 +25,4 @@
   grid-template-rows: 10vh 1fr 10vh;
   grid-template-columns: 2fr 10fr;
   grid-gap: .5vh;
-}
-
-.sidebar {
-  grid-area: nav;
-  background: red;
-  height: calc(100vh - 21vh);
-}
-
-.content {
-  grid-area: conten;
-  background: blue;
-}
-
-.content img {
-  height: 150px;
-  width: 100%;
-}
-
-.footer {
-  grid-area: footer;
-  background: yellow;
 }
